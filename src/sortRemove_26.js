@@ -44,5 +44,6 @@ function mergeArr(arr1, arr2) {
 }
 
 module.exports = {
-  sortRemove
+  sortRemove,
+  mergeArr,
 }

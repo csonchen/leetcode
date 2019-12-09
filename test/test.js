@@ -1,5 +1,5 @@
 var assert = require('assert');
-var { sortRemove } = require('../src/sortRemove_26');
+var { sortRemove, mergeArr } = require('../src/sortRemove_26');
 
 
 describe('Array', function() {
@@ -12,6 +12,10 @@ describe('Array', function() {
   describe('26', function() {
     it('[0, 0, 1, 1, 2, 3]', function() {
       assert.equal(sortRemove([0, 0, 1, 2, 3, 4]), 5)
+    })
+
+    it('[0, 2, 3] merge [1, 4, 5] get [0, 1, 2, 3, 4, 5]', function() {
+      assert.deepEqual(mergeArr([0, 2, 3], [1, 4, 5]), [0, 1, 2, 3, 4, 5])
     })
   })
 });
