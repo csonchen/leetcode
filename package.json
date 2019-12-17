@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/csonchen/leetcode#readme",
   "devDependencies": {
+    "cz-conventional-changelog": "^3.0.2",
     "mocha": "^6.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
